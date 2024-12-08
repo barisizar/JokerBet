@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2d1b69;  /* Dark purple background */
+  --secondary-color: #3a2285; /* Lighter purple for containers */
+  --accent-color: #8b5cf6;   /* Bright purple for accents */
+  --slot-color: #ffffff;     /* White for content */
+  --text-color: #ffffff;
+  --muted-text: #cbd5e1;
+  --border-color: #e2e8f0;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-image {
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 1rem;
+  position: absolute;
+  opacity: 0.15;
+  top: 0;
+  z-index: 1;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  text-align: center;
+  z-index: 2;
+  font-weight: 600;
+}
+
+.welcome-description {
+  font-size: 1.5rem;
+  color: var(--muted-text);
+  margin-bottom: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.game-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+  z-index: 2;
+}
+
+.game-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Update this style for the Joker Slot page */
+.joker-slot-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #4a0e4e, #81007f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}

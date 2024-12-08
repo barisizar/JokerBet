@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2d1b69;  /* Dark purple background */
+  --secondary-color: #3a2285; /* Lighter purple for containers */
+  --accent-color: #8b5cf6;   /* Bright purple for accents */
+  --slot-color: #ffffff;     /* White for slot machine */
+  --text-color: #ffffff;
+  --muted-text: #cbd5e1;
+  --border-color: #e2e8f0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.joker-slot-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.slot-content {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.joker-slot-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.balance {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--muted-text);
+  margin-bottom: 2rem;
+}
+
+.slot-machine {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2d1b69;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reel-container {
+  width: 5rem;
+  height: 15rem;
+  background-color: var(--slot-color);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.symbol {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--slot-color);
+  color: #1a1a1a;
+}
+
+.symbol.winning {
+  background-color: rgba(139, 92, 246, 0.2);
+  transform: scale(1.05);
+}
+
+.bet-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bet-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bet-button, .clear-bet-button, .spin-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bet-button:hover, .clear-bet-button:hover, .spin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.current-bet {
+  color: var(--muted-text);
+  font-size: 0.875rem;
+}
+
+.spin-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.autoplay-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.autoplay-button, .stop-autoplay-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.autoplay-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.stop-autoplay-button {
+  background-color: #ef4444;
+}
+
+.stop-autoplay-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.jackpot-display {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.animated-win-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(45, 27, 105, 0.95);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-description {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-description h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.game-description h2 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+/* Card symbols and emojis */
+.emoji-symbol {
+  color: #1a1a1a;
+}
+
+.card-symbol {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.symbol.winning .card-symbol {
+  filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.5));
+}
+
+.symbol .emoji-symbol {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #2d1b69; /* Dark purple color for symbols */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.symbol.winning .emoji-symbol {
+  transform: scale(1.1);
+  color: #8b5cf6; /* Accent purple color for winning symbols */
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+@media (max-width: 768px) {
+  .joker-slot-container {
+    padding: 1rem;
+  }
+
+  .reel-container {
+    width: 4rem;
+    height: 12rem;
+  }
+
+  .symbol {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
