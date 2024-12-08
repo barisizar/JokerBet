@@ -14,7 +14,7 @@ A modern casino gaming platform featuring two exciting games: Joker's Jackpot an
 - Animated game selection cards
 
 ### Joker's Jackpot
-https://github.com/barisizar/JokerBet/assets/JokerSlot.mov
+https://github.com/barisizar/JokerBet/assets/JokerSlot.gif
 - Dynamic 5x3 slot machine
 - Smooth spinning animations
 - Card-themed symbol animations
@@ -23,7 +23,7 @@ https://github.com/barisizar/JokerBet/assets/JokerSlot.mov
 - Autoplay functionality demo
 
 ### Sweet Bonanza
-https://github.com/barisizar/JokerBet/assets/JokerBet.mov
+https://github.com/barisizar/JokerBet/assets/JokerBet.gif
 - 8x8 fruit grid gameplay
 - Sequential fruit dropping animations
 - Cluster win highlights
